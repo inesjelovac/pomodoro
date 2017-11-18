@@ -1,54 +1,31 @@
 <template>
-  <div id="app">
-    <header>
-      <span>Vue.js PWA</span>
-    </header>
-    <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
-      <router-view></router-view>
-    </main>
+  <div>
+    <app-navigation></app-navigation>
+    <nav class="navbar fixed-bottom">
+      <div></div>
+      <div class="navbar-right">
+        photo credit: marcoverch <a href="http://www.flickr.com/photos/149561324@N03/38402897046">Nahaufnahme einer Weckuhr</a> via <a href="http://photopin.com">photopin</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>
+      </div>
+    </nav>
   </div>
 </template>
 
 <script>
+import Navigation from './components/Navigation';
+
 export default {
-  name: 'app',
+  components: {
+    appNavigation: Navigation,
+  },
 };
 </script>
 
 <style>
 body {
-  margin: 0;
-}
-
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
-main {
-  text-align: center;
-  margin-top: 40px;
-}
-
-header {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495E;
-  color: #ffffff;
-}
-
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
+  background: url('/static/img/bg_1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 </style>
