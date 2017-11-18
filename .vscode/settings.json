@@ -1,6 +1,6 @@
 {
-  "vetur.format.defaultFormatter.js": "none",
-  "vetur.format.defaultFormatter.ts": "none",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatter.ts": "vscode-typescript",
   "vetur.format.defaultFormatter.stylus": "none",
   "vetur.format.defaultFormatter.less": "none",
   "vetur.format.defaultFormatter.scss": "none",
