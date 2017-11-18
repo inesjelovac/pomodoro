@@ -2,6 +2,7 @@
   <div>
     <app-navigation></app-navigation>
     <app-work-counter></app-work-counter>
+    <app-rest-counter></app-rest-counter>
     <nav class="navbar fixed-bottom">
       <div></div>
       <div class="navbar-right">
@@ -13,12 +14,14 @@
 
 <script>
 import Navigation from './components/Navigation';
+import RestCounter from './components/RestCounter';
 import WorkCounter from './components/WorkCounter';
 
 export default {
   components: {
     appNavigation: Navigation,
     appWorkCounter: WorkCounter,
+    appRestCounter: RestCounter,
   },
 };
 </script>
