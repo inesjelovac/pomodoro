@@ -1,11 +1,6 @@
 <template>
-  <div class="row">
-    <div class="col-xs-12 offset-md-6 col-md-6">
-      <button type="button" class="btn btn-dark btn-lg" @click="startCounter">{{ buttonText }}</button>
-    </div>
-  </div>
+  <button type="button" class="btn btn-dark btn-lg" @click="startCounter">{{ buttonText }}</button>
 </template>
-
 <script>
 export default {
   data() {
