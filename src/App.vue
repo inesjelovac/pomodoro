@@ -5,12 +5,8 @@
       <div class="row full-height">
         <div class="col-xs-12 offset-md-6 col-md-6">
           <div class="d-flex flex-column justify-content-center align-items-center full-height">
-            <div class="p-2">
-              <app-work-counter></app-work-counter>
-            </div>
-            <div class="p-2">
-              <app-rest-counter></app-rest-counter>
-            </div>
+            <app-counter buttonText="Start Work"></app-counter>
+            <app-counter buttonText="Start Pause"></app-counter>
           </div>
         </div>
       </div>
@@ -26,14 +22,12 @@
 
 <script>
 import Navigation from './components/Navigation';
-import RestCounter from './components/RestCounter';
-import WorkCounter from './components/WorkCounter';
+import Counter from './components/Counter';
 
 export default {
   components: {
     appNavigation: Navigation,
-    appWorkCounter: WorkCounter,
-    appRestCounter: RestCounter,
+    appCounter: Counter,
   },
 };
 </script>
