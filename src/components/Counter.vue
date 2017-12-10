@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      time: 10, // 25 * 60,
+      time: 25 * 60,
       counterValue: 0,
       counterRunning: false,
 
