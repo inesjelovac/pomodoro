@@ -1,16 +1,7 @@
 <template>
   <div class="full-height">
     <app-navigation></app-navigation>
-    <div class="container content-height">
-      <div class="row full-height">
-        <div class="col-xs-12 offset-md-6 col-md-6">
-          <div class="d-flex flex-column justify-content-center align-items-center full-height">
-            <app-counter buttonText="Start Work"></app-counter>
-            <app-counter buttonText="Start Pause"></app-counter>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-home-counters></app-home-counters>
     <nav class="navbar fixed-bottom nav-height">
       <div></div>
       <div class="navbar-right">
@@ -22,12 +13,12 @@
 
 <script>
 import Navigation from './components/Navigation';
-import Counter from './components/Counter';
+import HomeCounters from './components/HomeCounters';
 
 export default {
   components: {
     appNavigation: Navigation,
-    appCounter: Counter,
+    appHomeCounters: HomeCounters,
   },
 };
 </script>
