@@ -1,7 +1,7 @@
 <template>
   <div class="full-height">
     <app-navigation></app-navigation>
-    <app-home-counters></app-home-counters>
+    <router-view></router-view>
     <nav class="navbar fixed-bottom nav-height">
       <div></div>
       <div class="navbar-right">
