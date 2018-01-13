@@ -14,10 +14,10 @@ export default {
     buttonText: {
       default: 'Start',
     },
+    time: {},
   },
   data() {
     return {
-      time: 25 * 60,
       counterValue: 0,
       counterRunning: false,
 
@@ -26,7 +26,6 @@ export default {
   methods: {
     resetCounter() {
       this.counterValue = this.time;
-      this.counterValue = 0;
     },
     startCounter() {
       this.counterValue = this.time;
