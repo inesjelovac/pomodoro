@@ -13,12 +13,10 @@
 
 <script>
 import Navigation from './components/Navigation';
-import HomeCounters from './components/HomeCounters';
 
 export default {
   components: {
     appNavigation: Navigation,
-    appHomeCounters: HomeCounters,
   },
 };
 </script>

@@ -10,6 +10,16 @@ export default new Vuex.Store({
   },
   getters: {
     getWorkCounterTime: state => state.workCounterTime,
+    getWorkCounterTimeInMinutes: state => state.workCounterTime / 60,
     getRestCounterTime: state => state.restCounterTime,
+    getRestCounterTimeInMinutes: state => state.restCounterTime / 60,
+  },
+  mutations: {
+    setWorkCounterTime: (state, payload) => {
+      state.workCounterTime = payload * 60;
+    },
+    setRestCounterTime: (state, payload) => {
+      state.restCounterTime = payload * 60;
+    },
   },
 });
